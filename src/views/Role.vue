@@ -1,6 +1,9 @@
 <template>
     <div class="role">
-        <h1>Add New Role</h1>
+        <div class="role__header">
+            <router-link to="/"><ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon></router-link>
+            <h1>Add New Role</h1>
+        </div>
 
         <div class="role-form">
             <h2>Insert Data</h2>
@@ -110,10 +113,21 @@ export default {
 <style lang="scss" scoped>
 .role {
   margin: 40px 70px;
-  h1 {
-    font-weight: 300;
-    margin-bottom: 80px;
-    text-align: left;
+  &__header {
+      display: flex;
+      position: relative;
+      h1 {
+        font-weight: 300;
+        margin-bottom: 80px;
+        text-align: left;
+    }
+    .icon {
+        position: absolute;
+        left: -2%;
+        top: 8%;
+        font-size: 20px;
+        cursor: pointer;
+    }
   }
   .role-form {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);

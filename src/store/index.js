@@ -27,8 +27,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         },
         {
           "id": 2,
@@ -45,8 +45,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         },
         {
           "id": 3,
@@ -81,8 +81,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         },
         {
           "id": 4,
@@ -111,8 +111,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         },
         {
           "id": 5,
@@ -141,8 +141,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         },
         {
           "id": 6,
@@ -171,8 +171,8 @@ export default new Vuex.Store({
               "photo_url": "http://placekitten.com/60/60"
             }
           ],
-          "created_on": "2019-01-18T18:25:43.511Z",
-          "modified_on": "2019-01-18T18:25:43.511Z"
+          "created_on": "18-01-2019T18:25:43.511Z",
+          "modified_on": "18-01-2019T18:25:43.511Z"
         }
     ]
   },
