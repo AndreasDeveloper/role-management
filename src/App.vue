@@ -21,16 +21,20 @@ body {
 }
 
 // Set Default
-button, input, select {
+button, input, select, textarea {
   border: none;
   outline: none;
 }
 
 button {
   cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
-input, select {
+
+input, select, textarea {
   border-bottom: 2px solid #3498db;
   padding-bottom: 5px;
   width: 20%;
@@ -48,5 +52,13 @@ select {
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+}
+
+.create-cta {
+  background: #3498db !important;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
 }
 </style>

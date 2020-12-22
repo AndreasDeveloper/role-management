@@ -17,8 +17,8 @@
                 </select>
             </div>
         </div>
-        <div class="top-nav__button">
-            <button>Create New Role</button>
+        <div>
+            <router-link to="/role"><button class="create-cta">Create New Role</button></router-link>
         </div>
     </div>
 </template>
@@ -102,13 +102,6 @@ export default {
                 width: 100%;
             }
         }
-    }
-    &__button button {
-        background: #3498db;
-        border-radius: 4px;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 10px 15px;
     }
 }
 </style>

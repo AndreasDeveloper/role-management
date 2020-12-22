@@ -21,7 +21,7 @@
                 <ion-icon name="lock-closed-outline"></ion-icon>
             </div>
             <div class="role-card-bottom__buttons" v-else>
-                <button class="role-card-bottom__buttons--edit">Edit</button>
+                <button class="role-card-bottom__buttons--edit" @click="initEdit">Edit</button>
                 <button class="role-card-bottom__buttons--delete" @click="initDelete">Delete</button>
             </div>
         </div>
@@ -53,6 +53,9 @@ export default {
     methods: {
         initDelete() {
             this.$emit('initDelete', this.role);
+        },
+        initEdit() {
+            this.$emit('initEdit', this.role);
         }
     }
 }

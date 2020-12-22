@@ -177,8 +177,33 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
+    CREATE_ROLE(state, data) {
+      state.roles.push(data);
+    },
+    UPDATE_ROLE(state, data) {
+      state.roles = state.roles.map(el => {
+        if (el.id === data.id) {
+          Object.assign(el, data);
+        }
+        return el;
+      });
+    }
   },
   actions: {
+    async create({ commit }, data) {
+      try {
+        await commit('CREATE_ROLE', data);
+      } catch (err) {
+        throw err;
+      }
+    },
+    async update({ commit }, data) {
+      try {
+        await commit('UPDATE_ROLE', data);
+      } catch (err) {
+        throw err;
+      }
+    }
   },
   modules: {
   }

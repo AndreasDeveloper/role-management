@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Role from '../views/Role.vue'
 
 Vue.use(VueRouter)
 
@@ -8,8 +9,15 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    props: true
   },
+  {
+    path: '/role',
+    name: 'Role',
+    component: Role,
+    props: true
+  }
 ]
 
 const router = new VueRouter({
