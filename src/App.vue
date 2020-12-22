@@ -53,6 +53,9 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
+a {
+  color: inherit;
+}
 
 .create-cta {
   background: #3498db !important;
