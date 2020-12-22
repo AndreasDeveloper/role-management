@@ -22,7 +22,7 @@
             </div>
             <div class="role-card-bottom__buttons" v-else>
                 <button class="role-card-bottom__buttons--edit">Edit</button>
-                <button class="role-card-bottom__buttons--delete">Delete</button>
+                <button class="role-card-bottom__buttons--delete" @click="initDelete">Delete</button>
             </div>
         </div>
     </div>
@@ -48,6 +48,11 @@ export default {
             handler(v) {
                 this.role = v;
             }
+        }
+    },
+    methods: {
+        initDelete() {
+            this.$emit('initDelete', this.role);
         }
     }
 }

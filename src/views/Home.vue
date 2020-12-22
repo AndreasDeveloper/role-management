@@ -3,7 +3,7 @@
     <h1>User Roles Management</h1>
     <TopNav @initSearch="search" @initFilter="filter" />
     <div class="role-wrapper">
-      <RoleCard v-for="(role, i) in data" :key="i" :passedData="role" :id="role.id" />
+      <RoleCard v-for="(role, i) in data" :key="i" :passedData="role" :id="role.id" @initDelete="deleteRole" />
     </div>
   </div>
 </template>
@@ -68,8 +68,16 @@ export default {
           this.data = clonedData;
         }
       });
+    },
+    deleteRole(role) {
+      let clonedData = [...this.data];
 
-      console.log(clonedData)
+      clonedData.map(el => {
+        if (el.id === role.id) {
+          clonedData.splice(clonedData.indexOf(el), 1);
+          this.data = clonedData;
+        }
+      });
     }
   }
 }
