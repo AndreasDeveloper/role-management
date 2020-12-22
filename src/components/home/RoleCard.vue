@@ -54,8 +54,6 @@ export default {
                 if (this.roleUsers.length > 6) {
                     this.roleUsers = this.roleUsers.slice(0, 6);
                 }
-                
-                console.log(this.role)
             }
         }
     },
