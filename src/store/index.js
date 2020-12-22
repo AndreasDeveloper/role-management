@@ -50,6 +50,12 @@ export default new Vuex.Store({
               "last_name": "Hayes",
               "photo_url": "http://placekitten.com/60/60"
             },
+            {
+              "id": 7,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
           ],
           "created_on": "18-01-2019T18:25:43.511Z",
           "modified_on": "18-01-2019T18:25:43.511Z"
