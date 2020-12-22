@@ -25,6 +25,42 @@ export default new Vuex.Store({
               "first_name": "Bill",
               "last_name": "Hayes",
               "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 3,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 4,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 5,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 6,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 7,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
+            },
+            {
+              "id": 8,
+              "first_name": "Bill",
+              "last_name": "Hayes",
+              "photo_url": "http://placekitten.com/60/60"
             }
           ],
           "created_on": "18-01-2019T18:25:43.511Z",

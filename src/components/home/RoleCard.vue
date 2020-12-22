@@ -10,7 +10,8 @@
             </div>
             <p>{{ role.description.substring(0, 85) }}...</p>
             <div class="role-card__users">
-                <img v-for="(user, i) in role.users" :key="i" :src="user.photo_url" alt="User" />
+                <img v-for="(user, i) in roleUsers" :key="i" :src="user.photo_url" alt="User" />
+                <span class="role-card__users__rest" v-if="role.users.length > 6">+{{ role.users.length - roleUsers.length }}</span>
             </div>
         </div>
         <div class="role-card-bottom">
@@ -33,7 +34,8 @@ export default {
     name: 'RoleCard',
     data() {
         return {
-            role: {}
+            role: {},
+            roleUsers: []
         }
     },
     props: {
@@ -47,6 +49,13 @@ export default {
             immediate: true,
             handler(v) {
                 this.role = v;
+                let clonedData = [...v.users];
+                this.roleUsers = clonedData;
+                if (this.roleUsers.length > 6) {
+                    this.roleUsers = this.roleUsers.slice(0, 6);
+                }
+                
+                console.log(this.role)
             }
         }
     },
@@ -89,11 +98,18 @@ export default {
     }
     &__users {
         margin-top: 25px;
+        display: flex;
         img {
             border-radius: 50%;
             margin-right: 5px;
             height: 40px;
             width: 40px;
+        }
+        &__rest {
+            background: #bbb;
+            border-radius: 50%;
+            color: #fff;
+            padding: 10px 12px;
         }
     }
     &__status {
