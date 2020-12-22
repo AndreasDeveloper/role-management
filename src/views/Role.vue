@@ -74,7 +74,7 @@ export default {
             this.newRole.created_on = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('-');
             try {
                 window.setTimeout(() => { // Simulating API hit after 2 seconds
-                    this.create(this.newRole);
+                    this.create(this.newRole); // Await here. But as it is static (seeded) data, not demonstrated.
                     this.btnState = false;
                 }, 2000);
                 window.alert('Successfully created new role');
@@ -89,7 +89,7 @@ export default {
             this.newRole.created_on = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('-');
             try {
                 window.setTimeout(() => {
-                    this.update(this.newRole);
+                    this.update(this.newRole); // Await here. But as it is static (seeded) data, not demonstrated.
                     this.btnState = false;
                 }, 2000);
                 window.alert('Successfully updated role');
