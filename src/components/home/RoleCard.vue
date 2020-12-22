@@ -10,8 +10,8 @@
             </div>
             <p>{{ role.description.substring(0, 85) }}...</p>
             <div class="role-card__users">
-                <img v-for="(user, i) in role.users" :key="i" :src="user.photo_url" alt="User" />
-                <span class="role-card__users__rest" v-if="role.users.length > 3">+5</span>
+                <img v-for="(user, i) in role.users" :key="i" :src="user.photo_url" alt="User" /> 
+                <span class="role-card__users__rest" v-if="role.users.length > 3">+5</span>  <!-- Set to static -->
             </div>
         </div>
         <div class="role-card-bottom">
